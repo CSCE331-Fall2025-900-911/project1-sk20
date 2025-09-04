@@ -1,0 +1,113 @@
+<head>
+  <title>Shreyas Kumar — Portfolio</title> <!--Same title as landing page use css style rules for margins, and use td, tr to add elements in a table format, first row: title, second row: links..-->
+</head>
+<body>
+  <header>
+    <table role="presentation" width="100%">
+      <tr>
+        <td align="center">
+          <h1 style="margin:0;">Portfolio</h1>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+            <a href="index.html" aria-current="page">Home</a> |
+            <a href="qualifications.html">Qualifications</a> |
+            <a href="service.html">Service</a> |
+        </td>
+      </tr>
+    </table>
+  </header>
+</body>
+
+<style> /*use conatiner and what is called flex and make a flex containter so the three boxes for my specific projects on this page are evenly spaced out like I have drawn it*/
+    .container{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    /*below are box css styles for the actual box itself I am followoing a display astehtic with this page so using flex adjustments makes sure the box is spaced and fits image and text */
+    .box{ 
+        flex:1;
+        border: 2px solid black; 
+        margin: 20px;
+        padding: 15px;
+        max-width: 400px;
+    }
+
+    .box h2{
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .box img{
+        display: block;      
+        margin: 0 auto;       
+        max-width: 100%; 
+        height: auto;
+    }
+
+
+</style>
+
+<body> <!--this is all going to be in once big flex container and within the container will be the boxes that have image of project, and bullet point description of the project-->>
+    <div class = "container">
+        <div class="box">
+            <h2>Diagnoser</h2>
+     
+            <img src="AI.jpeg">
+     
+            <ul style="font-size: 15px;">
+                 <li>
+                     Developed a Python and Flask-based web app that scrapes medical information on diseases like Multiple Myeloma
+                     from clinic websites using BeautifulSoup, storing structured data for chatbot interaction
+                 </li>
+     
+                 <br>
+     
+                 <li>
+                     Integrated the OpenAI GPT-3.5 model to enable users to ask natural language questions about symptoms, treatment
+                     options, and receive guided diagnostic questionnaires based on the scraped medical data
+                 </li>
+             </ul>
+         </div>
+
+         <div class="box">
+            <h2>BenefitU</h2>
+     
+            <img src="Benefit.jpeg">
+     
+            <ul style="font-size: 15px;">
+                 <li>
+                    Built a web scraping application in Python to extract compensation and benefits data from Levels.fyi for 1,000+
+                    companies, storing structured results in a MongoDB database for scalable access and querying
+                 </li>
+     
+                 <br>
+     
+                 <li>
+                    Integrated the OpenAI GPT-3.5-turbo model to analyze stored data and power a chatbot capable of answering detailed,
+                    natural language questions about company-specific benefits
+                 </li>
+             </ul>
+         </div>
+
+         <div class="box">
+            <h2>AI Voice Agent</h2>
+            <h2>Currently in progress..</h2>
+            <img src="VOICE.jpeg">
+     
+            <ul style="font-size: 15px;">
+                 <li>
+                    Plan to build an AI voice agent using LiveKit for real-time voice interaction, integrating web-scraped medical data from trusted clinic sites to provide accurate and structured health information.
+                 </li>
+     
+                 <br>
+     
+                 <li>
+                    Plan to leverage Snowflake Cortex Analysis to process patient medical records and enable the agent to answer diagnostic questions, suggest possible conditions, and guide users through symptom-based decision flows.
+                 </li>
+             </ul>
+         </div>
+    </div>
+</body>

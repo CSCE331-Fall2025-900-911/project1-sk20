@@ -1,0 +1,101 @@
+<body>
+    <header>
+      <table role="presentation" width="100%">
+        <tr>
+          <td align="center">
+            <h1 style="margin:0;">Service</h1>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+              <a href="index.html" aria-current="page">Home</a> |
+              <a href="portfolio.html">Portfolio</a> |
+              <a href="qualifications.html">Qualifications</a> |
+          </td>
+        </tr>
+      </table>
+    </header>
+  </body>
+
+  <style> /*this page entriely uses the exact same logic and code from portfolio.html where I will have all my orgs I am or was involved with in a flex container which will contain boxes that have an image of the club and what service I did through it*/
+    .container{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .box{
+        flex:1;
+        border: 2px solid black; 
+        margin: 20px;
+        padding: 15px;
+        max-width: 400px;
+    }
+
+    .box h2{
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .box img{
+        display: block;      
+        margin: 0 auto;       
+        max-width: 100%; 
+        height: auto;
+    }
+
+
+</style>
+
+<body>
+    <div class = "container">
+        <div class="box">
+            <h2>TAMU DATATHON</h2>
+     
+            <img src="TD.png">
+     
+            <ul style="font-size: 15px;">
+                 <li>
+                    Educated peers through workshops on data science tools and technologies such as machine learning, APIs, and analytics platforms, helping students strengthen their technical skill sets.
+                 </li>
+     
+                 <br>
+     
+                 <li>
+                    Engaged with the community by tabling for the club, raising awareness of TAMU Datathon and guiding students toward resources to grow their data science capabilities.
+                 </li>
+
+                 <br>
+
+                 <li>
+                    Supported large-scale event operations for TAMU Datathon Lite and TAMU Datathon by coordinating logistics including food, shirts, and participant management to ensure smooth execution.
+                 </li>
+             </ul>
+         </div>
+
+         <div class="box">
+            <h2>MSC SPENCER</h2>
+     
+            <img src="MSC.png">
+     
+            <ul style="font-size: 15px;">
+                 <li>
+                    Volunteered at a local nursing home in Dallas, engaging with residents, listening to their stories, and learning how to better support the well-being of older community members.
+                 </li>
+     
+                 <br>
+     
+                 <li>
+                    Contributed to facility upkeep by helping repaint fences, ensuring the environment was polished, welcoming, and up to date.
+                 </li>
+
+                 <br>
+
+                 <li>
+                    Gained perspective on community service through hands-on activities that emphasized compassion, care, and responsibility toward others.
+                 </li>
+             </ul>
+         </div>
+    </div>
+</body>
+
+</html>

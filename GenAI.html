@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shreyas Kumar — Contact</title>
+  <style>
+    .mar_space1 { margin-top: 0; margin-bottom: 15px; }
+    table[role="presentation"] { border-collapse: collapse; }
+    .center { text-align: center; margin-top: 40px; }
+    a { text-decoration: none; color: black; }
+    a:hover { text-decoration: underline; }
+    .note { font-size: 14px; opacity: 0.9; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <table role="presentation" width="100%">
+      <tr>
+        <td align="center">
+          <h1 style="margin:0;">Contact</h1>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <nav aria-label="Primary" style="margin-top:4px;">
+            <a href="index.html">Home</a> |
+            <a href="portfolio.html">Portfolio</a> |
+            <a href="qualifications.html">Qualifications</a> |
+            <a href="service.html">Service</a> |
+            <a href="contact.html" aria-current="page">Contact</a>
+          </nav>
+        </td>
+      </tr>
+    </table>
+  </header>
+
+  <div class="center">
+    <h2>Say hello 👋</h2>
+    <p style="font-size:18px;">I’d love to connect! You can reach me here:</p>
+    <p class="mar_space1"><strong>Email:</strong> <a href="mailto:Shreyas.rishu@gmail.com">Shreyas.rishu@gmail.com</a></p>
+    <p class="mar_space1"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shreyas-kumar-20/">linkedin.com/in/shreyas-kumar-20</a></p>
+  </div>
+
+  <footer class="center">
+    <p class="note">© <span id="year"></span> Shreyas Kumar</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

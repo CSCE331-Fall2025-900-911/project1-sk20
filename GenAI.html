@@ -3,14 +3,58 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Shreyas Kumar — Contact</title>
+  <title>Shreyas Kumar — Updates</title>
   <style>
-    .mar_space1 { margin-top: 0; margin-bottom: 15px; }
-    table[role="presentation"] { border-collapse: collapse; }
-    .center { text-align: center; margin-top: 40px; }
-    a { text-decoration: none; color: black; }
+    /* Calm, clean style to match your theme */
+    table[role="presentation"] { border-collapse: collapse; width: 100%; }
+    a { text-decoration: none; color: inherit; }
     a:hover { text-decoration: underline; }
-    .note { font-size: 14px; opacity: 0.9; margin-top: 20px; }
+
+    .page { padding: 16px 12px 40px; }
+    .intro { max-width: 900px; margin: 24px auto; text-align: center; }
+    .intro p { margin: 6px 0; }
+    .note { font-size: 14px; opacity: 0.9; }
+
+    .updates { 
+      display: flex; 
+      flex-wrap: wrap; 
+      justify-content: center; 
+      gap: 20px; 
+      max-width: 1100px; 
+      margin: 0 auto; 
+    }
+    .card { 
+      border: 2px solid #000; 
+      padding: 14px 16px; 
+      width: 320px; 
+      box-sizing: border-box; 
+      background: #fff; 
+    }
+    .card h3 { margin: 8px 0 6px; }
+    .meta { font-size: 14px; opacity: 0.9; }
+    .thumb { 
+      display: block; 
+      width: 100%; 
+      height: 140px; 
+      object-fit: cover; 
+      border: 1px solid #000; 
+      margin: 8px 0 10px; 
+      background: #fafafa; 
+    }
+    .pill { 
+      display: inline-block; 
+      border: 1px solid #000; 
+      padding: 2px 8px; 
+      font-size: 12px; 
+      border-radius: 999px; 
+      margin-right: 6px; 
+    }
+
+    footer { text-align: center; margin-top: 30px; }
+
+    @media (max-width: 740px) {
+      .card { width: 100%; max-width: 520px; }
+    }
   </style>
 </head>
 <body>
@@ -18,7 +62,7 @@
     <table role="presentation" width="100%">
       <tr>
         <td align="center">
-          <h1 style="margin:0;">Contact</h1>
+          <h1 style="margin:0;">Updates</h1>
         </td>
       </tr>
       <tr>
@@ -28,26 +72,85 @@
             <a href="portfolio.html">Portfolio</a> |
             <a href="qualifications.html">Qualifications</a> |
             <a href="service.html">Service</a> |
-            <a href="contact.html" aria-current="page">Contact</a>
+            <a href="contact.html">Contact</a> |
+            <a href="updates.html" aria-current="page">Updates</a>
           </nav>
         </td>
       </tr>
     </table>
   </header>
 
-  <div class="center">
-    <h2>Say hello 👋</h2>
-    <p style="font-size:18px;">I’d love to connect! You can reach me here:</p>
-    <p class="mar_space1"><strong>Email:</strong> <a href="mailto:Shreyas.rishu@gmail.com">Shreyas.rishu@gmail.com</a></p>
-    <p class="mar_space1"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shreyas-kumar-20/">linkedin.com/in/shreyas-kumar-20</a></p>
+  <div class="page">
+    <section class="intro">
+      <h2 style="margin:0">What I'm up to</h2>
+      <p>Short snapshots of recent work, projects, and community things I'm doing.</p>
+      <p class="note">Last updated <span id="last-updated"></span>.</p>
+    </section>
+
+    <section class="updates" aria-label="Recent updates">
+      <article class="card" aria-labelledby="u1">
+        <div class="meta"><span class="date">Aug 2025</span></div>
+        <h3 id="u1">AI Voice Agent — prototype</h3>
+        <img class="thumb" src="VOICE.jpeg" alt="AI Voice Agent preview" />
+        <p>Built a real‑time voice agent with LiveKit and Snowflake Cortex Analysis that can walk through symptom questions and summarize patient records for decision support.</p>
+        <div class="tags"><span class="pill">LiveKit</span><span class="pill">Cortex</span><span class="pill">Health</span></div>
+      </article>
+
+      <article class="card" aria-labelledby="u2">
+        <div class="meta"><span class="date">Jul 2025</span></div>
+        <h3 id="u2">Internal data chatbot — MVP</h3>
+        <img class="thumb" src="evolv.png" alt="evolv Consulting logo" />
+        <p>Shipped an internal chatbot (Node.js + Snowflake Cortex) that turns natural‑language questions into SQL with citations, improving access to analytics for non‑technical teams.</p>
+        <div class="tags"><span class="pill">Node.js</span><span class="pill">Cortex</span><span class="pill">Data</span></div>
+      </article>
+
+      <article class="card" aria-labelledby="u3">
+        <div class="meta"><span class="date">Jun 2025</span></div>
+        <h3 id="u3">BenefitU — data refresh</h3>
+        <img class="thumb" src="Benefit.jpeg" alt="BenefitU graphic" />
+        <p>Expanded the levels.fyi scraper and refreshed the MongoDB dataset. Added better prompts so the chatbot can answer more granular benefits questions per company.</p>
+        <div class="tags"><span class="pill">Python</span><span class="pill">MongoDB</span><span class="pill">LLM</span></div>
+      </article>
+
+      <article class="card" aria-labelledby="u4">
+        <div class="meta"><span class="date">May 2025</span></div>
+        <h3 id="u4">TAMU Datathon 2025 — kickoff</h3>
+        <img class="thumb" src="TD.png" alt="TAMU Datathon" />
+        <p>Started outreach and planning for TAMU Datathon 2025 — workshops, sponsorships, and logistics to help students build real projects.</p>
+        <div class="tags"><span class="pill">Community</span><span class="pill">Workshops</span></div>
+      </article>
+
+      <article class="card" aria-labelledby="u5">
+        <div class="meta"><span class="date">Spring 2025</span></div>
+        <h3 id="u5">MSC Spencer — service day</h3>
+        <img class="thumb" src="MSC.png" alt="MSC Spencer" />
+        <p>Volunteered at a Dallas nursing home — listened to residents and helped repaint fences to keep the space welcoming.</p>
+        <div class="tags"><span class="pill">Service</span><span class="pill">Dallas</span></div>
+      </article>
+
+      <article class="card" aria-labelledby="u6">
+        <div class="meta"><span class="date">Ongoing</span></div>
+        <h3 id="u6">Intelligent Sales Assistant — R&amp;D</h3>
+        <img class="thumb" src="AI.jpeg" alt="AI graphic" />
+        <p>Prototyping a Streamlit + Snowflake Cortex app for semantic search and text‑to‑SQL on sales data with citations and quick insights.</p>
+        <div class="tags"><span class="pill">Streamlit</span><span class="pill">Cortex</span><span class="pill">R&amp;D</span></div>
+      </article>
+    </section>
   </div>
 
-  <footer class="center">
+  <footer style="text-align:center;">
     <p class="note">© <span id="year"></span> Shreyas Kumar</p>
   </footer>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    (function(){
+      var d = new Date();
+      var opts = { year: 'numeric', month: 'long', day: 'numeric' };
+      var last = document.getElementById('last-updated');
+      if (last) last.textContent = d.toLocaleDateString(undefined, opts);
+      var y = document.getElementById('year');
+      if (y) y.textContent = d.getFullYear();
+    })();
   </script>
 </body>
 </html>
